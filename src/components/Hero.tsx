@@ -54,10 +54,10 @@ export default function Hero() {
         </div>
 
         {/* Conteúdo Split Layout — Opção A */}
-        <div className="container-ultra w-full relative z-10 py-20 md:py-0">
-          <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 min-h-screen md:min-h-0 md:py-24">
+        <div className="container-ultra w-full relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 min-h-screen md:py-24">
 
-            {/* Texto — mobile: primeiro */}
+            {/* Texto — mobile: primeira dobra inteira */}
             <div className="flex-1 text-center md:text-left order-1 md:order-1">
               <motion.p
                 initial={{ opacity: 0, y: 40 }}
@@ -114,8 +114,8 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            {/* Foto Hero — mobile: primeiro (visualmente acima) */}
-            <div className="flex-shrink-0 order-2 md:order-2 relative">
+            {/* Foto Hero — desktop: split direita. Mobile: oculta (aparece em bloco proprio abaixo) */}
+            <div className="hidden md:block flex-shrink-0 order-2 md:order-2 relative">
               <div className="relative w-64 h-80 md:w-80 md:h-[480px]">
                 {/* Moldura rotacionada — Photo Treatment A */}
                 <div
@@ -130,6 +130,21 @@ export default function Hero() {
               </div>
             </div>
 
+          </div>
+        </div>
+
+        {/* Foto mobile — aparece apos a primeira dobra ao rolar */}
+        <div className="md:hidden w-full flex justify-center pb-16 relative z-10">
+          <div className="relative w-72 h-96">
+            <div
+              className="absolute inset-0 bg-bg-light rounded-sm"
+              style={{ transform: 'rotate(-2deg)' }}
+            />
+            <img
+              src="/foto-diego.jpg"
+              alt="Diego de Carvalho Nisner, psicólogo"
+              className="relative z-20 w-full h-full object-cover object-top rounded-sm"
+            />
           </div>
         </div>
       </section>
