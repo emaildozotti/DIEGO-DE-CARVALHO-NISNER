@@ -124,7 +124,7 @@ export default function Hero() {
                 />
                 {/* FOTO HERO — substituir pela URL real */}
                 <img
-                  src="{HERO_IMAGE_URL}"
+                  src="/foto-diego.jpg"
                   alt="Diego de Carvalho Nisner, psicólogo especialista em conflitos relacionais"
                   className="relative z-10 w-full h-full object-cover object-top rounded-sm"
                   onError={(e) => {

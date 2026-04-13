@@ -18,20 +18,24 @@ export default function VideoSection() {
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <div className="flex justify-center">
-            {/* Container 9:16 — YouTube Shorts */}
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div
-              className="relative w-full ring-1 ring-primary shadow-2xl rounded-sm overflow-hidden"
-              style={{ maxWidth: '300px', aspectRatio: '9 / 16' }}
+              style={{
+                width: '300px',
+                maxWidth: '100%',
+                aspectRatio: '9 / 16',
+                borderRadius: '4px',
+                overflow: 'hidden',
+                boxShadow: '0 25px 60px -12px rgba(0, 0, 0, 0.6)',
+                backgroundColor: '#000',
+              }}
             >
-              {/* VÍDEO — substituir {YOUTUBE_VIDEO_ID} pelo ID real */}
               <iframe
-                src="https://www.youtube.com/embed/{YOUTUBE_VIDEO_ID}"
+                src="https://www.youtube.com/embed/NLej4BoDVzk"
                 title="Vídeo de Diego de Carvalho Nisner"
-                className="w-full h-full"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
+                style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
               />
             </div>
           </div>

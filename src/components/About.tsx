@@ -75,7 +75,7 @@ export default function About() {
               />
               {/* FOTO ABOUT — substituir pela URL real */}
               <img
-                src="{ABOUT_IMAGE_URL}"
+                src="/foto-diego-sobre.jpg"
                 alt="Diego de Carvalho Nisner, psicólogo"
                 className="relative z-10 w-full h-full object-cover object-top rounded-sm"
                 loading="lazy"
