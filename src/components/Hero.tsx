@@ -122,26 +122,11 @@ export default function Hero() {
                   className="absolute inset-0 bg-bg-light rounded-sm"
                   style={{ transform: 'rotate(-2deg)' }}
                 />
-                {/* FOTO HERO — substituir pela URL real */}
                 <img
                   src="/foto-diego.jpg"
                   alt="Diego de Carvalho Nisner, psicólogo especialista em conflitos relacionais"
-                  className="relative z-10 w-full h-full object-cover object-top rounded-sm"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement
-                    target.style.display = 'none'
-                  }}
+                  className="relative z-20 w-full h-full object-cover object-top rounded-sm"
                 />
-                {/* Placeholder quando foto não carrega */}
-                <div className="absolute inset-0 z-10 bg-primary/20 rounded-sm flex flex-col items-center justify-center gap-3">
-                  <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="16" cy="12" r="6" stroke="#98C1D9" strokeWidth="1.5" />
-                      <path d="M4 28c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#98C1D9" strokeWidth="1.5" strokeLinecap="round" />
-                    </svg>
-                  </div>
-                  <span className="text-secondary/60 text-xs text-center px-4 font-light">Foto de Diego</span>
-                </div>
               </div>
             </div>
 
