@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 min-h-screen md:min-h-0 md:py-24">
 
             {/* Texto — mobile: primeiro */}
-            <div className="flex-1 text-center md:text-left order-2 md:order-1">
+            <div className="flex-1 text-center md:text-left order-1 md:order-1">
               <motion.p
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -115,7 +115,7 @@ export default function Hero() {
             </div>
 
             {/* Foto Hero — mobile: primeiro (visualmente acima) */}
-            <div className="flex-shrink-0 order-1 md:order-2 relative">
+            <div className="flex-shrink-0 order-2 md:order-2 relative">
               <div className="relative w-64 h-80 md:w-80 md:h-[480px]">
                 {/* Moldura rotacionada — Photo Treatment A */}
                 <div
